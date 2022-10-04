@@ -1,0 +1,474 @@
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test
+$ cd demo222
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git confif --global user.name "leviamit"
+git: 'confif' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git config --global user.name "leviamit"
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git config --global user.email "amitranjanbitm22@gmail.com"
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'   testnew.txt
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testnew.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git add .
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testnew.txt
+
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git commit -m "done"
+[main 8852a3e] done
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testnew.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 272 bytes | 136.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/leviamit/demo222.git
+   b66afb4..8852a3e  main -> main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git add .
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git commit -m "done2"
+[main 94a7f6f] done2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 261 bytes | 261.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/leviamit/demo222.git
+   8852a3e..94a7f6f  main -> main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git pull origin main
+From https://github.com/leviamit/demo222
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 654 bytes | 50.00 KiB/s, done.
+From https://github.com/leviamit/demo222
+ * branch            main       -> FETCH_HEAD
+   94a7f6f..7d7e7c9  main       -> origin/main
+Updating 94a7f6f..7d7e7c9
+Fast-forward
+ testnew1 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testnew1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 654 bytes | 59.00 KiB/s, done.
+From https://github.com/leviamit/demo222
+ * branch            main       -> FETCH_HEAD
+   7d7e7c9..79200ad  main       -> origin/main
+Updating 7d7e7c9..79200ad
+Fast-forward
+ testnew1 | 1 +
+ 1 file changed, 1 insertion(+)
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch
+* main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch b11
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch
+  b11
+* main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git checkout b11
+Switched to branch 'b11'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'   testnew.txt
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md          testnew1
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git checkout b11
+Switched to branch 'b11'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git branch b22
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git checkout b22
+Switched to branch 'b22'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git branch
+  b11
+* b22
+  main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git checkout b22
+Already on 'b22'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git add .
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git commit -m "done"
+[b22 db454b5] done
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test22.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git checkout b11
+Switched to branch 'b11'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch b33
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git add .
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git commit -m "done"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'   testnew.txt
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md          testnew1
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch b33
+fatal: a branch named 'b33' already exists
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git add .
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git commit -m "done"
+[main 36a9d55] done
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test33.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git diff b33 main
+diff --git a/test33.txt b/test33.txt
+new file mode 100644
+index 0000000..e69de29
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'   test33.txt
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md          testnew.txt
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt         testnew1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'   test33.txt
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md          testnew.txt
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt         testnew1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git merge b33
+Already up to date.
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch
+  b11
+  b22
+  b33
+* main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git checkout b22
+Switched to branch 'b22'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git merge b11
+Already up to date.
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'   test22.txt
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md          testnew.txt
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt         testnew1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git checkout b22
+Already on 'b22'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b22)
+$ git checkout b11
+Switched to branch 'b11'
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ ls
+ AMITKUMARRANJAN-assignment2.txt      'Document 5.docx'   testnew.txt
+ AMITKUMARRANJAN-lab1-assignment.txt   README.md          testnew1
+ AMITKUMARRANJAN_assignment2.pdf       test11.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ bit merge b22
+bash: bit: command not found
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git merge b22
+Updating 79200ad..db454b5
+Fast-forward
+ test22.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test22.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git branch -d b22
+Deleted branch b22 (was db454b5).
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git branch -d b33
+Deleted branch b33 (was 79200ad).
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git branch
+* b11
+  main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git push origin b11
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 232 bytes | 116.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'b11' on GitHub by visiting:
+remote:      https://github.com/leviamit/demo222/pull/new/b11
+remote:
+To https://github.com/leviamit/demo222.git
+ * [new branch]      b11 -> b11
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git pull origin b11
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 646 bytes | 49.00 KiB/s, done.
+From https://github.com/leviamit/demo222
+ * branch            b11        -> FETCH_HEAD
+   db454b5..02cc7dc  b11        -> origin/b11
+Updating db454b5..02cc7dc
+Fast-forward
+ test11.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (b11)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch -d b11
+error: The branch 'b11' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D b11'.
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch -D b11
+Deleted branch b11 (was 02cc7dc).
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch
+* main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/b11
+  origin/main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git push origin --delete b11
+To https://github.com/leviamit/demo222.git
+ - [deleted]         b11
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git fetch origin bb1
+fatal: couldn't find remote ref bb1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git checkout bb1
+error: pathspec 'bb1' did not match any file(s) known to git
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch
+* main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git fetch origin bb1
+fatal: couldn't find remote ref bb1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git branch
+* main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git fetch origin bb1
+fatal: couldn't find remote ref bb1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git fetch --prune origin
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git fetch origin bb1
+fatal: couldn't find remote ref bb1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git fetch origin bb1
+From https://github.com/leviamit/demo222
+ * branch            bb1        -> FETCH_HEAD
+ * [new branch]      bb1        -> origin/bb1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (main)
+$ git checkout bb1
+Switched to a new branch 'bb1'
+branch 'bb1' set up to track 'origin/bb1'.
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (bb1)
+$ git branch
+* bb1
+  main
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (bb1)
+$ git push origin bb1
+Everything up-to-date
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (bb1)
+$ git push origin bb1
+Everything up-to-date
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (bb1)
+$ git add .
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (bb1)
+$ git commit -m "done"
+[bb1 c53a192] done
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testbb1.txt
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (bb1)
+$ git push origin bb1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 264 bytes | 264.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/leviamit/demo222.git
+   79200ad..c53a192  bb1 -> bb1
+
+Amit@DESKTOP-UDKC1QS MINGW64 ~/Desktop/Test/demo222 (bb1)
+$
